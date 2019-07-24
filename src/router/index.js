@@ -14,6 +14,7 @@ const routes = [
         path: '/',
         component: () => import('@/views/Home.vue'),
         name: '配置中心',
+        redirect:'/main',
         iconCls: 'el-icon-message', // 图标样式class
         children: [
           { path: '/main', component: () => import('@/views/Main.vue'), name: '主页', hidden: true },
