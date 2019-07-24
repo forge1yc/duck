@@ -75,3 +75,21 @@ export function jobConfList(data) {
       data
     })
   }
+
+   // 任务快照信息
+   export function snapshotList(data) {
+    return request({
+      url: '/snapshot/list',
+      method: 'post',
+      data
+    })
+  }
+
+  // 删除任务快照信息
+  export function snapshotDelete(data) {
+    return request({
+      url: '/snapshot/delete',
+      method: 'post',
+      data
+    })
+  }
