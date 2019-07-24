@@ -9,7 +9,7 @@
   <div  class="text item">
     
     <!--列表-->
-      <el-table :data="groups" highlight-current-row v-loading="loading"  style="width: 100%;">
+      <el-table :data="groups" highlight-current-row v-loading="loading"  stripe style="width: 100%;">
           <el-table-column type="index" width="60">
       </el-table-column>
         <el-table-column prop="name" label="集群名称" width="150">

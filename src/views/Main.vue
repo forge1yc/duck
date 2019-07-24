@@ -4,8 +4,17 @@
 
           <el-card class="box-card">
   <div  class="text item">
-   欢迎使用分布式任务调度平台
-   <a href="https://github.com/busgo/forest">forest</a>
+
+    <span> 欢迎使用分布式任务调度平台<a href="https://github.com/busgo/forest">forest</a></span>
+    <el-divider content-position="left">功能</el-divider>
+    <span>任务配置</span>
+    <span>任务集群配置</span>
+       <span>调度集群监控</span>
+        <span>任务执行计划</span>
+        <span>任务执行快照</span>
+
+    <el-divider content-position="left">联系方式</el-divider>
+    <span>如有问题请联系466862016@qq.com</span>
   </div>
 </el-card>
 

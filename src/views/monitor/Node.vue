@@ -7,7 +7,7 @@
   </div>
   <div  class="text item">
     <!--列表-->
-      <el-table :data="nodes" highlight-current-row v-loading="loading"  style="width: 100%;">
+      <el-table :data="nodes" highlight-current-row v-loading="loading"  stripe  style="width: 100%;">
         <el-table-column prop="name" label="ip" >
         </el-table-column>
         <el-table-column prop="status" label="状态">

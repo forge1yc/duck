@@ -30,7 +30,7 @@
             <el-submenu :index="index+''" :key="item.name" v-if="!item.leaf"><!--遍历的其中一个菜单项,设置有单节点的。-->
               <template slot="title"><i :class="item.iconCls"></i>{{item.name}}</template>
               <el-menu-item v-for="child in routeChildren(item)" :index="child.path" :key="child.path">
-                {{child.name}}
+               <i :class="child.iconCls"></i> {{child.name}}
               </el-menu-item>
             </el-submenu>
             <el-menu-item v-if="item.leaf&&item.children.length>0" :key="item.name" :index="item.children[0].path"><i
@@ -49,7 +49,7 @@
                   @mouseout="showMenu(index,false)">
                 <li v-for="child in item.children" :key="child.path" class="el-menu-item"
                     style="padding-left: 40px;" :class="$route.path===child.path?'is-active':''"
-                    @click="$router.push(child.path)">{{child.name}}
+                    @click="$router.push(child.path)"><i :class="child.iconCls"></i>{{child.name}}
                 </li>
               </ul>
             </template>
