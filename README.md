@@ -1,7 +1,6 @@
 # duck
 
-> A Vue.js project
-
+> 分布式任务调度平台-管理端
 ## Build Setup
 
 ``` bash
@@ -15,4 +14,5 @@ npm run dev
 npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+[分布式任务调度平台](https://github.com/busgo/forest).
