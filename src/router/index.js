@@ -26,7 +26,8 @@ const routes = [
         name: '监控中心',
         iconCls: 'el-icon-message', // 图标样式class
         children: [
-          { path: '/monitor/plan', component: () => import('@/views/monitor/Plan.vue'), name: '执行计划' }
+          { path: '/monitor/plan', component: () => import('@/views/monitor/Plan.vue'), name: '执行计划' },
+          { path: '/monitor/node', component: () => import('@/views/monitor/Node.vue'), name: '调度集群' }
          
         ]
       }

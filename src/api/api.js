@@ -66,3 +66,12 @@ export function jobConfList(data) {
       data
     })
   }
+  
+  // 调度集群节点信息
+  export function nodeList(data) {
+    return request({
+      url: '/node/list',
+      method: 'post',
+      data
+    })
+  }

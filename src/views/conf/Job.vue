@@ -19,7 +19,7 @@
       </el-form>
     </el-col>
     <!--列表-->
-      <el-table :data="jobs" highlight-current-row v-loading="loading" border style="width: 100%;">
+      <el-table :data="jobs" highlight-current-row v-loading="loading"  style="width: 100%;">
         <el-table-column prop="id" label="id" width="200" fixed>
         </el-table-column>
         <el-table-column prop="name" label="任务名称" width="150">
