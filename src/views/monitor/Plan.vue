@@ -83,7 +83,7 @@
        <!--列表-->
       <el-table :data="clients" highlight-current-row v-loading="loading"  style="width: 100%;">
         
-        <el-table-column prop="name" label="client" width="150">
+        <el-table-column prop="ip" label="client" width="150">
         </el-table-column>
         <el-table-column prop="group" label="集群" width="150">
         </el-table-column>
