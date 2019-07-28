@@ -46,7 +46,7 @@
         </el-table-column>
          <el-table-column prop="ip" label="ip" width="100" >
         </el-table-column>
-           <el-table-column prop="startTime" label="创建时间" width="150" >
+           <el-table-column prop="createTime" label="创建时间" width="150" >
         </el-table-column>
         <el-table-column prop="target" label="target">
         </el-table-column>
@@ -91,8 +91,8 @@
          <el-form-item label="任务参数" prop="params">
             <el-input v-model="viewForm.params"  auto-complete="off" disabled></el-input>
         </el-form-item>
-         <el-form-item label="创建时间" prop="startTime">
-            <el-input v-model="viewForm.startTime"  auto-complete="off" disabled></el-input>
+         <el-form-item label="创建时间" prop="createTime">
+            <el-input v-model="viewForm.createTime"  auto-complete="off" disabled></el-input>
         </el-form-item>
           <el-form-item label="手机号码" prop="mobile">
             <el-input v-model="viewForm.mobile"  auto-complete="off" disabled></el-input>
