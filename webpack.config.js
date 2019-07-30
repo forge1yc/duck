@@ -63,7 +63,8 @@ module.exports = {
           "babelrc": false,// 不采用.babelrc的配置
           "plugins": [
               "dynamic-import-webpack"
-          ]
+          ],
+          presets: ['es2015']
       }
       },
       {
