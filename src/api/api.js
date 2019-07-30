@@ -93,3 +93,13 @@ export function jobConfList(data) {
       data
     })
   }
+
+
+   // 任务执行快照信息
+   export function executeSnapshotList(data) {
+    return request({
+      url: '/execute/snapshot/list',
+      method: 'post',
+      data
+    })
+  }
