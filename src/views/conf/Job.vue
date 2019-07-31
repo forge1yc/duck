@@ -22,23 +22,27 @@
       <el-table :data="jobs" highlight-current-row v-loading="loading"  stripe  style="width: 100%;">
         <el-table-column prop="id" label="id" width="200" fixed>
         </el-table-column>
-        <el-table-column prop="name" label="任务名称" width="150">
+        <el-table-column prop="name" label="任务名称" width="250">
         </el-table-column>
         <el-table-column prop="group" label="任务集群" width="100">
         </el-table-column>
         <el-table-column prop="cron" label="Cron表达式" width="100" >
         </el-table-column>
+        
         <el-table-column prop="status" label="状态" width="120">
-
           <template slot-scope="scope">
               <el-tag type="success" size="mini" v-if="scope.row.status==1">启用</el-tag>
               <el-tag type="danger" size="mini" v-else-if="scope.row.status==2">关闭</el-tag>
           </template>
         </el-table-column>
-        <el-table-column prop="target" label="target">
+        <el-table-column prop="target" label="target" width="300">
         </el-table-column>
-        <el-table-column label="操作" width="250" fixed="right">
+        <el-table-column label="操作" width="320" fixed="right">
       <template slot-scope="scope">
+         <el-button
+          size="mini"
+          type="warning"
+          @click="handleManual(scope.$index, scope.row)">立即执行</el-button>
          <el-button
           size="mini"
           type="primary"
@@ -205,7 +209,7 @@
   </section>
 </template>
 <script>
-import { jobConfList,groupConfList,jobAdd,jobEdit,jobDelete } from '@/api/api'
+import { jobConfList,groupConfList,jobAdd,jobEdit,jobDelete,jobExecute } from '@/api/api'
 export default {
   data () {
     return {
@@ -288,7 +292,22 @@ export default {
   },
   methods: {
    
+    handleManual(index, row){
 
+       this.$confirm('确认要立即此任务吗？', '友情提示', {}).then(() => {
+
+            let para = {id:row.id}
+            jobExecute(para).then((res) => {
+                this.$message({
+                      message: "手动执行任务请求已提交",
+                      type: 'success'
+                    })
+            })
+
+
+       })
+         
+    },
    handleView(index, row){
      this.viewForm = Object.assign({}, row)
      this.viewFormVisible =true

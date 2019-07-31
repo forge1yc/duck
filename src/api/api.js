@@ -32,6 +32,15 @@ export function jobConfList(data) {
     })
   }
 
+    // 手动执行任务
+    export function jobExecute(data) {
+      return request({
+        url: '/job/execute',
+        method: 'post',
+        data
+      })
+    }
+
   export function groupConfList(data) {
     return request({
       url: '/group/list',
@@ -103,3 +112,4 @@ export function jobConfList(data) {
       data
     })
   }
+  
