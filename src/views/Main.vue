@@ -25,16 +25,56 @@
     type="success">
   </el-alert>
  <div class="block">
-    <el-timeline-item timestamp="2019/07/24" placement="top">
+
+<el-timeline-item timestamp="2019/10/24" placement="top">
       <el-card>
-        <h4>完成 分布式调度平台v1.0</h4>
-        <p>busgo 提交于 2019/07/24 21:09</p>
+        <h4>分布式调度平台v0.1.5</h4>
+         <p>修复任务配置删除无法同步删除任务调度计划的bug</p>
+        <p>busgo 提交于 2019/10/24</p>
+      </el-card>
+    </el-timeline-item>
+ <el-timeline-item timestamp="2019/08/01" placement="top">
+      <el-card>
+        <h4>完成 分布式调度平台v0.1.4</h4>
+         <p>当任务配置变更同步任务执行计划功能</p>
+          <p>增加任务节点状态变更通知功能</p>
+           <p>任务配置增加版本号字段-任务配置变更幂等性</p>
+        <p>busgo 提交于 2019/08/01</p>
+      </el-card>
+    </el-timeline-item>
+ <el-timeline-item timestamp="2019/07/31" placement="top">
+      <el-card>
+        <h4>分布式调度平台v0.1.3</h4>
+         <p>增加任务手动触发执行功能</p>
+        <p>busgo 提交于 2019/07/31</p>
+      </el-card>
+    </el-timeline-item>
+    <el-timeline-item timestamp="2019/07/31" placement="top">
+      <el-card>
+        <h4>完成 分布式调度平台v0.1.2</h4>
+         <p>增加任务待执行快照失败转移功能</p>
+         <p>增加启动命令参数功能</p>
+        <p>busgo 提交于 2019/07/31</p>
+      </el-card>
+    </el-timeline-item>
+   <el-timeline-item timestamp="2019/07/28" placement="top">
+      <el-card>
+        <h4>分布式调度平台v0.1.1</h4>
+         <p>修复删除任务客户端事件监听的bug</p>
+         <p>增加任务快照变更功能</p>
+        <p>busgo 提交于 2019/07/28</p>
+      </el-card>
+    </el-timeline-item>
+    <el-timeline-item timestamp="2019/07/25" placement="top">
+      <el-card>
+        <h4>分布式调度平台v0.1.0</h4>
+        <p>busgo 提交于 2019/07/25</p>
       </el-card>
     </el-timeline-item>
     <el-timeline-item timestamp="2019/07/02" placement="top">
       <el-card>
         <h4>初始化项目</h4>
-        <p>busgo 提交于 2019/07/02 20:46</p>
+        <p>busgo 提交于 2019/07/02</p>
       </el-card>
     </el-timeline-item>
   </el-timeline>
