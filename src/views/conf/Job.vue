@@ -368,7 +368,7 @@ export default {
         }
       })
    },
-   editSubmit(){
+   editSubmit(){ // 这里是编辑提交
 
       this.$refs.editForm.validate((valid) => {
         if (valid) {
